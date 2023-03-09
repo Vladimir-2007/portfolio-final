@@ -1,0 +1,21 @@
+.app {
+  background-color: #ffffff;
+  font-family: var(--font-base);
+  min-height: 100vh;
+
+  .app__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,84 @@
+.app__skills {
+  max-width: 1050px;
+  padding-top: 30px;
+  flex-basis: 19%;
+  margin-left: 10px;
+  text-align: center;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+
+  .app__skills-wrap {
+    background-color: #645abb;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 60px;
+
+    h3 {
+      color: white;
+      border-bottom: 1px solid white;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+
+    }
+  }
+
+  .app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .app__profile-item {
+      display: flex;
+      width: 30%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+
+      @media screen and (min-width: 750px) {
+        width: 100%;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+        padding: 5px;
+        border-radius: 3px;
+        object-fit: cover;
+
+        @media screen and (max-width: 920px) {
+          width: 25px;
+          height: 25px;
+        }
+
+        @media screen and (max-width: 750px) {
+          width: 35px;
+          height: 35px;
+        }
+
+      }
+
+      .skills__text {
+        font-size: 16px;
+        color: white;
+        font-weight: 300;
+        align-self: center;
+        padding-left: 10px;
+
+        @media screen and (max-width: 920px) {
+          font-size: 12px;
+        }
+
+      }
+    }
+  }
+}
